@@ -5,8 +5,11 @@ At the moment, everything happens in the dev folder. A docker install script for
 
 ## Scripts
 
-From the terminal, type `dev/script_name`.
+Go in the scripts folder with the terminal and use `./script-name` to use a script.
 
-- `build` Build the docker image base under the name of build/dev:base
+### Dev scripts:
 
-
+- `build`		Build the docker image base under the name of **build/dev:base**
+- `start_base`		Runs **build/dev:base** in a container and open a terminal. An argument can be passed which will be added after the **base** tag.
+- `stop`		Stops all the running Docker containers
+- `clean-docker`	`stop` then deletes all the **dev/** and <none> images for a rebuild
