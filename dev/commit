@@ -1,0 +1,10 @@
+#!/bin/bash
+
+if test -z "$1" 
+then
+      arg="default-commit"
+else
+      arg=$1
+fi
+
+docker commit $(docker ps | grep base | awk '{print $1}') build/dev:base-$arg

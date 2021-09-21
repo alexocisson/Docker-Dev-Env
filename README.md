@@ -10,6 +10,7 @@ Go in the scripts folder with the terminal and use `./script-name` to use a scri
 ### Dev scripts:
 
 - `build`		Build the docker image base under the name of **build/dev:base**
-- `start_base`		Runs **build/dev:base** in a container and open a terminal. An argument can be passed which will be added after the **base** tag.
+- `start`		Runs **build/dev:base** in a container and open a terminal. An argument can be passed which will be added after the **base** tag.
 - `stop`		Stops all the running Docker containers
 - `clean-docker`	`stop` then deletes all the **dev/** and <none> images for a rebuild
+- `commit`		Commits the running container to a new image **build/dev:base-name-of-the-commit` where name-of-the-commit is the arg passed to the command
