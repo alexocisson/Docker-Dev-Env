@@ -1,0 +1,4 @@
+docker stop DEV_CONTAINOR
+docker rm DEV_CONTAINOR
+docker run --name DEV_CONTAINOR -td build/dev:base
+docker exec -it DEV_CONTAINOR /bin/bash
